@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saddlement.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#EFFBFB">
+
+   
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/saddlementklein" 
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/VoerTnTIn" 
+		android:textAppearance="?android:attr/textAppearanceMedium" 
+		android:layout_centerHorizontal="true" />
+    
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+	    android:ems="12"
+	    android:gravity="center"
+	    android:layout_centerHorizontal="true"
+	    android:hint="T&amp;T"
+         />
+
+   
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="@string/TnT_go" 
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        
+        />
+
+
+</RelativeLayout>
+

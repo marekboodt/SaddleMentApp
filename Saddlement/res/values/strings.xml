@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Saddlement</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="login_welcomescreen">Login</string>
+	<string name="Username">Username:</string>
+	<string name="Password">Password:</string>
+	<string name="login_button">Sign in</string>
+	<string name="TnT">Track &amp; Trace</string>
+	<string name="VoerTnTIn">Voer uw Track &amp; Trace code in</string>
+	<string name="TnT_go">Go</string>
+	<string name="pakketten">Alle pakketten</string>
+	<string name="app">Over app</string>
+	<string name="faq">FAQ</string>
+	<string name="loguit">Log out</string>
+	<string name="overappContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend hendrerit quam, sed eleifend nulla viverra eu. Nulla ac semper lacus. Morbi erat tellus, bibendum at metus sagittis, ultricies auctor mi. Morbi nec dolor pharetra, mollis massa eu, eleifend nisl. Donec sodales quam sapien, venenatis sodales risus semper id. Morbi quis bibendum elit. Nullam eu volutpat dolor, eu posuere sem. Donec sit amet nibh nulla. Nam vulputate id libero vel euismod. \n\n
+
+Duis eleifend, quam sed aliquet ultricies, erat risus faucibus orci, sodales congue ipsum tortor id eros. Praesent velit nunc, dapibus non convallis quis, sollicitudin ut tortor. Nullam ut dolor eget lectus fringilla porta at in augue. Cras tincidunt feugiat metus, vel egestas felis ultrices id. Nulla eu varius metus. Vestibulum non nisl at neque mattis lacinia sed quis augue. Sed imperdiet libero in ante varius tempor. Sed feugiat dui non pharetra tincidunt. Nam luctus eros in sodales imperdiet. Donec ut bibendum diam. Aenean sit amet volutpat nulla. Proin sagittis nibh et lacus aliquet consectetur. Ut et imperdiet nisl. Pellentesque eget malesuada neque. Morbi elementum malesuada nibh, interdum malesuada arcu commodo eget. Sed pellentesque blandit justo, ut consequat nisl sollicitudin facilisis. \n\n
+
+Integer lobortis varius sapien, ut condimentum dolor laoreet quis. Praesent porttitor justo nunc, et auctor tellus fringilla eu. Vivamus convallis, dolor sit amet commodo suscipit, nisl leo placerat diam, sed rutrum velit massa sollicitudin magna. Praesent consequat tincidunt lorem, non ullamcorper velit fringilla vitae. Vivamus eu molestie felis, ornare adipiscing metus. Suspendisse ac leo sed turpis ultrices porta. Duis auctor augue justo, ac sollicitudin nibh dapibus et. Suspendisse vel commodo ante. Praesent lacus sapien, vestibulum eu tempus vitae, tempor eget tortor. Nunc eleifend libero vitae blandit semper. Mauris non placerat enim. \n\n
+
+Pellentesque porta justo vitae lacus porta luctus. Donec faucibus orci a velit pharetra ullamcorper. Nunc posuere quam vehicula eros placerat adipiscing. Mauris molestie arcu eu felis malesuada rutrum. Mauris nisl est, hendrerit ut eros sed, faucibus auctor ipsum. Ut blandit mi a est lobortis auctor. Quisque ullamcorper ipsum eu dignissim semper. Nam sed scelerisque nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vel bibendum dui. Sed semper dui a velit porta, nec cursus quam tristique. \n\n
+
+Ut et tortor nec libero congue vestibulum sit amet sit amet erat. Sed lacinia odio suscipit, luctus nisl non, consequat quam. Mauris ac rutrum diam, a imperdiet felis. Duis lorem ligula, porttitor sit amet egestas in, egestas eleifend lacus. Donec dignissim non tortor quis ullamcorper. In gravida a ipsum nec iaculis. In at purus nunc. Praesent et vestibulum justo, non rutrum lorem. Donec hendrerit dui id tellus pellentesque, eu porta urna ultrices. Curabitur venenatis lorem et neque dictum elementum. Aliquam vel mattis orci, non suscipit ligula. Nullam non nunc non magna blandit malesuada ultrices ut nisl. </string>
+</resources>
