@@ -185,7 +185,9 @@ android:fillViewport="true"
             android:layout_marginLeft="20dp"
             android:fontFamily="Segoe UI Light"
             android:textIsSelectable="false"
-            android:textSize="16sp" />
+            android:textSize="16sp" 
+            android:text="[filler]"
+            />
             
         </TableRow>
         
@@ -219,7 +221,9 @@ android:fillViewport="true"
             android:layout_marginLeft="20dp"
             android:fontFamily="Segoe UI Light"
             android:textIsSelectable="false"
-            android:textSize="16sp" />
+            android:textSize="16sp" 
+            android:text="[filler]"
+            />
             
         </TableRow>
      <TableRow
@@ -252,7 +256,9 @@ android:fillViewport="true"
             android:layout_marginLeft="20dp"
             android:fontFamily="Segoe UI Light"
             android:textIsSelectable="false"
-            android:textSize="16sp" />
+            android:textSize="16sp" 
+            android:text="[filler]"
+            />
             
         </TableRow>
     
