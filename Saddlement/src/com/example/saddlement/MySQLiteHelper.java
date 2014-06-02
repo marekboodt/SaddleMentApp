@@ -98,7 +98,6 @@ public class MySQLiteHelper extends SQLiteOpenHelper{
 		
 		//als we de resultaten krijgen, toon dan alleen de eerste
 
-		PakkettenTabel pakkettentabel = new PakkettenTabel();
 
 		if (cursor != null)
 	        cursor.moveToFirst();
@@ -109,9 +108,9 @@ public class MySQLiteHelper extends SQLiteOpenHelper{
 	    pakketje.setStatus(cursor.getString(2));
 	    
 	 
-	    Log.d("getBook("+id+")", pakketje.toString());
+	    Log.d("getPakket("+id+")", pakketje.toString());
 
-		return pakkettentabel;
+		return pakketje;
 
 		
 	}

@@ -1,80 +1,101 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true" >
+
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.saddlement.MainActivity"
-    tools:ignore="MergeRootFrame"
-    android:background="#EFFBFB">
+    android:layout_height="wrap_content"
+    android:background="#EFFBFB"
+    android:orientation="vertical" >
 
-   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/saddlementklein" 
-        />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/saddlementklein" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_centerVertical="true"
-        android:text="@string/Username" 
-		android:textAppearance="?android:attr/textAppearanceMedium" 
-        />
-    
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="20dp"
-        android:text="@string/Password" 
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="Segoe UI Light"
+            android:gravity="center"
+            android:text="@string/Username"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:fontFamily="Segoe UI Light"
+            android:gravity="center_vertical"
+            android:inputType="textNoSuggestions|textVisiblePassword"
+            android:textSize="16sp"
+            android:width="200dp" >
 
+            <requestFocus />
+        </EditText>
+ 		<TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/editText2"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="Segoe UI Light"
+            android:gravity="center"
+            android:text="@string/Password"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:fontFamily="Segoe UI Light"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:width="200dp" 
+            android:inputType="textPassword"
+            />
         
-        
-      android:layout_alignBottom="@+id/textView2"
-      android:layout_marginLeft="32dp"
-      android:layout_toRightOf="@+id/textView2"
-      android:ems="10"
-         />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignRight="@+id/editText3"
+            android:layout_below="@+id/editText3"
+            android:layout_marginTop="25dp"
+            android:height="20dp"
+            android:text="@string/login_button"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:width="200dp" />
 
-   
-    
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-       android:layout_alignBottom="@+id/textView3"
-      android:layout_alignLeft="@+id/editText1"
-      android:ems="10"
-        android:inputType="textPassword" />
+       
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        android:text="@string/login_button" 
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        
-        />
+</LinearLayout>
 
-
-</RelativeLayout>
-
+</ScrollView>

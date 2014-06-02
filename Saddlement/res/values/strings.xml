@@ -24,4 +24,10 @@ Integer lobortis varius sapien, ut condimentum dolor laoreet quis. Praesent port
 Pellentesque porta justo vitae lacus porta luctus. Donec faucibus orci a velit pharetra ullamcorper. Nunc posuere quam vehicula eros placerat adipiscing. Mauris molestie arcu eu felis malesuada rutrum. Mauris nisl est, hendrerit ut eros sed, faucibus auctor ipsum. Ut blandit mi a est lobortis auctor. Quisque ullamcorper ipsum eu dignissim semper. Nam sed scelerisque nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vel bibendum dui. Sed semper dui a velit porta, nec cursus quam tristique. \n\n
 
 Ut et tortor nec libero congue vestibulum sit amet sit amet erat. Sed lacinia odio suscipit, luctus nisl non, consequat quam. Mauris ac rutrum diam, a imperdiet felis. Duis lorem ligula, porttitor sit amet egestas in, egestas eleifend lacus. Donec dignissim non tortor quis ullamcorper. In gravida a ipsum nec iaculis. In at purus nunc. Praesent et vestibulum justo, non rutrum lorem. Donec hendrerit dui id tellus pellentesque, eu porta urna ultrices. Curabitur venenatis lorem et neque dictum elementum. Aliquam vel mattis orci, non suscipit ligula. Nullam non nunc non magna blandit malesuada ultrices ut nisl. </string>
+	<string name="pakketGegevens">Pakketgegevens</string>
+	<string name="id">ID: </string>
+	<string name="Afleveradres">Afleveradres: </string>
+	<string name="Status">Status: </string>
+	
+	
 </resources>

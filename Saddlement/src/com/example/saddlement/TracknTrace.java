@@ -4,6 +4,7 @@ package com.example.saddlement;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Editable;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -28,11 +29,11 @@ public class TracknTrace extends ActionBarActivity {
 			
 			@Override
 			public void onClick(View v) {
-				String trackntrace = mEdit.getText().toString();
-				Toast.makeText(getApplicationContext(), trackntrace, Toast.LENGTH_SHORT).show();
-
-				Intent intent = new Intent(TracknTrace.this, MainActivity.class);
-				intent.putExtra(trackntrace, 0);
+				String trackntrace = mEdit.getText().toString();					//maak van de input een String
+				Editable trackntraceInt = mEdit.getText();
+				int trackntraceInt2 = Integer.parseInt(trackntrace.toString());		//maak van de input een int
+				Intent intent = new Intent(TracknTrace.this, Pakket.class);
+				intent.putExtra("Track_Trace", trackntraceInt2);
 				startActivity(intent);
 			}
 		});
