@@ -29,5 +29,8 @@ Ut et tortor nec libero congue vestibulum sit amet sit amet erat. Sed lacinia od
 	<string name="Afleveradres">Afleveradres: </string>
 	<string name="Status">Status: </string>
 	
-	
+	<string name="Gewicht">Gewicht: </string>
+	<string name="Afmetingen">Afmetingen: </string>
+	<string name="Aankomsttijd">Aankomsttijd: </string>
+			
 </resources>

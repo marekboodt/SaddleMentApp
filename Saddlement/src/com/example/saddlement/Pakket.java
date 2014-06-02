@@ -18,6 +18,11 @@ import android.widget.Toast;
 
 public class Pakket extends ActionBarActivity {
 	private TextView textview;
+	private TextView textview12;
+	private TextView textview13;
+	private TextView textview14;
+	private TextView textview15;
+	private TextView textview16;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +30,20 @@ public class Pakket extends ActionBarActivity {
 		setContentView(R.layout.pakket);
 		
 		MySQLiteHelper db = new MySQLiteHelper(this);
-	//	db.addPakket(new PakkettenTabel("D.C.Meesstraat 6","Onderweg"));
-	//	db.addPakket(new PakkettenTabel("D.C.Meesstraat 5","Onderwegg"));
+		db.addPakket(new PakkettenTabel("D.C.Meesstraat 6","Onderweg"));
+		db.addPakket(new PakkettenTabel("D.C.Meesstraat 5","Onderweg"));
 
+		db.addPakket(new PakkettenTabel("D.C.Meesstraat 4","Onderweg"));
+		db.addPakket(new PakkettenTabel("D.C.Meesstraat 3","Onderweg"));
+		db.addPakket(new PakkettenTabel("D.C.Meesstraat 2","Onderweg"));
 		
 		List<PakkettenTabel> list = db.getAllBooks();
-		textview = (TextView)findViewById(R.id.textView10);
-		
-		
+//		textview = (TextView)findViewById(R.id.textView10);
+		textview12 = (TextView)findViewById(R.id.textView12);
+		textview13 = (TextView)findViewById(R.id.textView13);
+		textview14 = (TextView)findViewById(R.id.textView14);
+//		textview15 = (TextView)findViewById(R.id.textView15);
+//		textview16 = (TextView)findViewById(R.id.textView16);
 		
 		int grootte = list.size();
 		
@@ -56,13 +67,13 @@ public class Pakket extends ActionBarActivity {
 		}
 		
 		*/
-		PakkettenTabel tnt = db.getPakket(returnCodeInt);
-		
-		textview.append("ID: "+tnt.getId()+"\n");
-		textview.append("Afleveradres: "+tnt.getAfleveradres()+"\n");
-		textview.append("Status: "+tnt.getStatus()+"\n");
+		PakkettenTabel tnt = db.getPakket(returnCodeInt);							//LET OP. bij het opnieuw installeren moet je eerst rows aanmaken
+																		//aangezien de data gecleared wordt. er bestaat dan geen record
+		textview12.append(tnt.getId()+"\n");
+		textview13.append(tnt.getAfleveradres()+"\n");
+		textview14.append(tnt.getStatus()+"\n");
 
-		textview.append("\n");
+		
 		
 
 		
