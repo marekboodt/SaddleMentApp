@@ -56,7 +56,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
     // Handle item selection
     switch (item.getItemId()) {
         case R.id.pakketten:
-        	Intent intent = new Intent(TracknTrace.this, Pakket.class);		
+        	Intent intent = new Intent(TracknTrace.this, AllePakketten.class);		
 			startActivity(intent);
             return true;
         case R.id.app:

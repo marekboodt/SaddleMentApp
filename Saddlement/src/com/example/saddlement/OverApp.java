@@ -39,7 +39,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
     // Handle item selection
     switch (item.getItemId()) {
         case R.id.pakketten:
-        	Intent intent = new Intent(OverApp.this, OverApp.class);		
+        	Intent intent = new Intent(OverApp.this, AllePakketten.class);		
 			startActivity(intent);
             return true;
         case R.id.app:

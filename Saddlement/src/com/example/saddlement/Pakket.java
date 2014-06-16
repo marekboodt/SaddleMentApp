@@ -6,6 +6,7 @@ import java.util.List;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Editable;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -39,9 +40,9 @@ public class Pakket extends ActionBarActivity {
 		
 		List<PakkettenTabel> list = db.getAllBooks();
 //		textview = (TextView)findViewById(R.id.textView10);
-		textview12 = (TextView)findViewById(R.id.textView12);
-		textview13 = (TextView)findViewById(R.id.textView13);
-		textview14 = (TextView)findViewById(R.id.textView14);
+//		textview12 = (TextView)findViewById(R.id.textView12);
+//		textview13 = (TextView)findViewById(R.id.textView13);
+//		textview14 = (TextView)findViewById(R.id.textView14);
 //		textview15 = (TextView)findViewById(R.id.textView15);
 //		textview16 = (TextView)findViewById(R.id.textView16);
 		
@@ -69,9 +70,9 @@ public class Pakket extends ActionBarActivity {
 		*/
 		PakkettenTabel tnt = db.getPakket(returnCodeInt);							//LET OP. bij het opnieuw installeren moet je eerst rows aanmaken
 																		//aangezien de data gecleared wordt. er bestaat dan geen record
-		textview12.append(tnt.getId()+"\n");
-		textview13.append(tnt.getAfleveradres()+"\n");
-		textview14.append(tnt.getStatus()+"\n");
+//		textview12.append(tnt.getId()+"\n");
+//		textview13.append(tnt.getAfleveradres()+"\n");
+//		textview14.append(tnt.getStatus()+"\n");
 
 		
 		
@@ -84,6 +85,32 @@ public class Pakket extends ActionBarActivity {
         
         // get all books
     //    db.getAllBooks();
+		
+		
+		
+		
+		Button button10 = (Button)findViewById(R.id.button10);
+		button10.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(Pakket.this, RouteKoerier.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button button11 = (Button)findViewById(R.id.button11);
+		button11.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(Pakket.this, Alternatief.class);
+				startActivity(intent);
+			}
+		});
+		
 	}
 	
 	public String getIntentExtra(){
@@ -126,7 +153,7 @@ public class Pakket extends ActionBarActivity {
 	    // Handle item selection
 	    switch (item.getItemId()) {
 	        case R.id.pakketten:
-	        	Intent intent = new Intent(Pakket.this, Pakket.class);		
+	        	Intent intent = new Intent(Pakket.this, AllePakketten.class);		
 				startActivity(intent);
 	            return true;
 	        case R.id.app:

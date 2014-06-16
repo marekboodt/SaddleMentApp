@@ -31,7 +31,12 @@
                           android:label="Over App"></activity>
                 <activity android:name=".Faq"
                           android:label="FAQ"></activity>
-               
+               <activity android:name=".AllePakketten"
+                          android:label="Alle Pakketten"></activity>
+               <activity android:name=".RouteKoerier"
+                          android:label="Route Koerier"></activity>
+               <activity android:name=".Alternatief"
+                          android:label="Alternatieve route"></activity>
     </application>
 
 </manifest>
